@@ -1,9 +1,10 @@
 var isDate = function (input) {
   //   write your code here
-	let reg=/\d{2}\/\d{2}\/\d{4}/
-	return reg.test(input);
+	// let reg=/\d{2}\/\d{2}\/\d{4}/
+	// return reg.test(input);
+	return !isNaN(Date.parse(input));
 };
 
-// Do not change the code below.
+// Do not change the code below.  
 const input = prompt("Enter Date.");
 alert(isDate(input));
